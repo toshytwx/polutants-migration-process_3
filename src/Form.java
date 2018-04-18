@@ -32,6 +32,12 @@ public class Form extends JDialog {
                 updateTable(values);
             }
         });
+        exitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
         tuneTable();
         tuneTextFields();
     }
